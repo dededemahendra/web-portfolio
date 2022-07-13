@@ -370,7 +370,7 @@ span {
 .service-card .service-btn i {
   cursor: pointer;
   transition: 0.3s ease;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 }
 .service-card:hover .service-btn i {
