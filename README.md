@@ -2,4 +2,4 @@
 
 Submission Idcamp\
 #Belajar Web Untuk Pemula\
-Using Html, Css and Javascript\
+Using Html, Css and Javascript
