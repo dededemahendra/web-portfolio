@@ -21,6 +21,7 @@ body {
   color: var(--text-color);
 }
 header {
+  display: flex;
   position: fixed;
   width: 100%;
   top: 0;
@@ -48,6 +49,7 @@ header {
 }
 .nav-list {
   display: flex;
+  margin-left: 40%;
 }
 .nav-list li {
   position: relative;
@@ -80,30 +82,7 @@ header {
   padding-top: 10px;
   cursor: pointer;
   display: none;
-}
-#download-cv {
-  display: none;
-}
-.top-btn {
-  display: inline-block;
-  padding: 10px 30px;
-  background: transparent;
-  border: 2px solid var(--main-color);
-  border-radius: 30px;
-  letter-spacing: 2px;
-  font-size: var(--p-font);
-  color: var(--second-color);
-  text-align: center;
-}
-.top-btn a {
-  color: var(--second-color);
-}
-.top-btn:hover {
-  background: var(--main-color);
-  color: #fff;
-}
-.top-btn:hover a {
-  color: #fff;
+  float: right;
 }
 header.sticky {
   background: #fff;
@@ -206,7 +185,7 @@ span {
 }
 .about-text h2 {
   font-size: var(--h2-font);
-  font-weight: 500;
+  font-weight: bold;
   margin: 8px 0px 25px;
   line-height: 1.1;
 }
@@ -231,7 +210,7 @@ span {
 }
 .portfolio-text h2 {
   font-size: var(--h2-font);
-  font-weight: 500;
+  font-weight: bold;
   margin: 7px 0px 20px;
   line-height: 1.1;
 }
@@ -321,13 +300,13 @@ span {
   padding: 5rem 0;
 }
 .service-text h3 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 1.1;
 }
 .service-text h2 {
   font-size: var(--h2-font);
-  font-weight: 500;
+  font-weight: bold;
   margin: 8px 0px 25px;
   line-height: 1.1;
 }
@@ -554,12 +533,13 @@ span {
     margin-left: 400%;
   }
   .home {
-    min-height: 80vh;
+    min-height: 100vh;
+    padding-top: 200px;
   }
   .nav-list {
     position: absolute;
     top: -800px;
-    left: 0;
+    left: -40%;
     right: 0;
     flex-direction: column;
     background: var(--main-color);
@@ -583,9 +563,6 @@ span {
   .nav-list.active {
     top: 100%;
   }
-  .top-btn {
-    display: none;
-  }
   .contact {
     margin-left: 22%;
     width: 550px;
@@ -599,4 +576,40 @@ span {
   }
 }
 @media (max-width: 768px) {
+  #menu-icon {
+    margin-left: 200px;
+  }
+  .home {
+    min-height: 100vh;
+    text-align: center;
+  }
+  .home-text {
+    margin-top: 1rem;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+
+    margin: 3rem;
+  }
+  .about-img {
+    width: 80%;
+    height: 80%;
+    margin-left: 12.2%;
+    object-fit: cover;
+    justify-content: center;
+  }
+  .about-text {
+    padding-top: 20px;
+  }
+  .work-img img {
+    width: 200px;
+  }
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
 }
