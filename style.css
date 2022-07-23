@@ -216,7 +216,6 @@ span {
 }
 .portfolio-text h3 {
   font-size: 30px;
-  color: var(--second-color);
   font-weight: 500;
 }
 .portfolio-text p {
@@ -471,6 +470,27 @@ span {
   opacity: 0.7;
   transform: scale(1.05);
 }
+.profile-card {
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 20px;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.profile-card img {
+  width: 160px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.1;
+}
 .footer {
   background-color: var(--main-color);
   padding: 1rem 0;
@@ -583,12 +603,14 @@ span {
     min-height: 100vh;
     text-align: center;
   }
+  .home-text {
+    margin-top: -3rem;
+  }
   .about {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     text-align: center;
-
     margin: 3rem;
   }
   .about-img {
@@ -607,5 +629,8 @@ span {
   .contact {
     width: 80%;
     margin: 0 auto;
+  }
+  .profile-card {
+    width: 80%;
   }
 }
