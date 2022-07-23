@@ -577,7 +577,7 @@ span {
 }
 @media (max-width: 768px) {
   #menu-icon {
-    margin-left: 200px;
+    margin-left: 150px;
   }
   .home {
     min-height: 100vh;
