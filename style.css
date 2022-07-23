@@ -583,9 +583,6 @@ span {
     min-height: 100vh;
     text-align: center;
   }
-  .home-text {
-    margin-top: 1rem;
-  }
   .about {
     display: grid;
     grid-template-columns: 1fr;
@@ -610,6 +607,5 @@ span {
   .contact {
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 1rem;
   }
 }
