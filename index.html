@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="/assets/logo.png" />
@@ -50,7 +51,7 @@
       <!--About-->
       <section class="about" id="about">
         <figure class="about-img">
-          <img src="/assets/about-pict.jpg" alt="About Me" />
+          <img src="/assets/profile.jpg" alt="About Me" />
         </figure>
         <article class="about-text">
           <h3>About Me</h3>
@@ -174,31 +175,42 @@
       <!--End Service-->
     </main>
     <!--Contact-->
-    <aside class="contact" id="contact">
-      <div class="container">
-        <div class="form-container">
-          <div class="left-container">
-            <div class="left-inner-container">
-              <div class="icons-contact"><i class="bx bxl-telegram"></i></div>
-              <h2>Let's Chat</h2>
-              <p>Whether you have a question, want to start a project or simply want to connect.</p>
-              <br />
-              <p>Feel free to send me a message in the contact form</p>
+    <aside id="contact">
+      <div class="contact">
+        <div class="container">
+          <div class="form-container">
+            <div class="left-container">
+              <div class="left-inner-container">
+                <div class="icons-contact"><i class="bx bxl-telegram"></i></div>
+                <h2>Let's Chat</h2>
+                <p>Whether you have a question, want to start a project or simply want to connect.</p>
+                <br />
+                <p>Feel free to send me a message in the contact form</p>
+              </div>
+            </div>
+            <div class="right-container">
+              <div class="right-inner-container">
+                <form action="" class="form">
+                  <h3>Contact Me</h3>
+                  <p>* Required</p>
+                  <input type="text" class="message" placeholder="Name *" />
+                  <input type="email" class="message" placeholder="Email *" />
+                  <input type="text" class="message" placeholder="Company" />
+                  <input type="phone" class="message" placeholder="Phone" />
+                  <textarea rows="4" class="message" placeholder="Message"></textarea>
+                  <button class="btn-contact">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
-          <div class="right-container">
-            <div class="right-inner-container">
-              <form action="" class="form">
-                <h3>Contact Me</h3>
-                <p>* Required</p>
-                <input type="text" class="message" placeholder="Name *" />
-                <input type="email" class="message" placeholder="Email *" />
-                <input type="text" class="message" placeholder="Company" />
-                <input type="phone" class="message" placeholder="Phone" />
-                <textarea rows="4" class="message" placeholder="Message"></textarea>
-                <button class="btn-contact">Submit</button>
-              </form>
-            </div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <figure class="profile-img">
+          <img src="/assets/profile.jpg" alt="Profile" />
+        </figure>
+        <div class="profile-text">
+          <h3>Agus Gede Jelantik Mahendra</h3>
           </div>
         </div>
       </div>
@@ -232,8 +244,7 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!--Link to JS-->
     <script src="script.js"></script>
   </body>

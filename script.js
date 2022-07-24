@@ -17,4 +17,4 @@ window.onscroll = () => {
   navlist.classList.remove("active");
 };
 
-ScrollReveal().reveal(".home-text .about-text .about-img .portfolio-text .portfolio-img .service-text .service-img .contact", { delay: 350, origin: "bottom" });
+AOS.init();
